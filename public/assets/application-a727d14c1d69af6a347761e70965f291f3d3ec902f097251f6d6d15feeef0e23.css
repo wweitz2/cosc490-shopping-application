@@ -1,0 +1,242 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 21, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 24, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.container {
+  width: 50%;
+  max-width: 750px;
+  background: rgba(250, 250, 250, 0.3);
+  margin: 3em auto 0 auto;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.03);
+  padding: 1em 0;
+}
+
+/* line 38, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 44, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.index_row {
+  padding: 2em;
+  border-bottom: 1px solid black;
+}
+/* line 47, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.index_row .todo_list_sub_title {
+  margin-bottom: 0;
+}
+
+/* line 52, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.links {
+  display: block;
+  margin: 1.5em auto 0 auto;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+/* line 58, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.links a {
+  color: white;
+}
+
+/* line 64, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row {
+  width: 100%;
+  border-top: 1px solid rgba(250, 250, 250, 0.3);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+/* line 68, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row .complete {
+  width: 10%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid rgba(250, 250, 250, 0.3);
+  padding: 1em 0;
+}
+/* line 75, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row .shopping_item {
+  width: 80%;
+  float: left;
+}
+/* line 78, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row .shopping_item p {
+  font-size: large;
+  margin: 0;
+  padding: 1em;
+  color: black;
+  font-weight: 500;
+}
+/* line 86, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row .trash {
+  width: 10%;
+  float: left;
+  text-align: center;
+  border-left: 1px solid rgba(250, 250, 250, 0.3);
+  padding: 1em 0;
+}
+/* line 93, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row i {
+  color: white;
+  transition: all .4s ease-in-out;
+}
+/* line 96, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper .row i:hover {
+  color: #1F7972;
+}
+/* line 101, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper #form {
+  margin-top: 2em;
+  padding: 0 5%;
+}
+/* line 104, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper #form input[type="text"] {
+  width: 72%;
+  margin-right: 2%;
+  display: inline-block;
+  outline: none;
+  background: rgba(250, 250, 250, 0.4);
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+/* line 115, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper #form input[type="submit"] {
+  background: rgba(250, 250, 250, 0.4);
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  width: 25%;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+/* line 125, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper #form input[type="submit"]:hover {
+  background: #1F7972;
+}
+/* line 129, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#shopping_items_wrapper #form ::-webkit-input-placeholder {
+  color: #1F7972;
+}
+
+/* line 133, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(40deg, #472975 5%, #EAECC6 100%);
+  background: -moz-linear-gradient(40deg, #472975 5%, #EAECC6 100%);
+  background: -ms-linear-gradient(40deg, #472975 5%, #EAECC6 100%);
+  background: -o-linear-gradient(40deg, #472975 5%, #EAECC6 100%);
+  background: linear-gradient(40deg, #472975 5%, #EAECC6 100%);
+  background-image: url(img.jpg);
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 144, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.shopping_list_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+/* line 151, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.shopping_list_title a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+/* line 155, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+.shopping_list_title a:hover {
+  opacity: 0.4;
+}
+
+/* line 161, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#form_title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+/* line 168, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#form_title a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+/* line 172, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+#form_title a:hover {
+  opacity: 0.4;
+}
+
+/* line 180, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+label {
+  color: #1F7972;
+}
+
+/* line 189, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+input[type="text"], textarea {
+  width: 100%;
+  margin: .5em 2% 1em 0;
+  display: inline-block;
+  outline: none;
+  background: rgba(250, 250, 250, 0.4);
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+
+/* line 200, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+textarea {
+  height: 200px;
+}
+
+/* line 203, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+input[type="submit"] {
+  background: white;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  width: 25%;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  color: #1F7972;
+}
+/* line 214, /Users/wweitzel/Repositories/COSC490/cosc490-shopping-application/app/assets/stylesheets/application.scss */
+input[type="submit"]:hover {
+  background: #1F7972;
+  color: white;
+}
