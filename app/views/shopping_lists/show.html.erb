@@ -1,0 +1,19 @@
+<div class="container">
+
+  <p id="notice"><%= notice %> </p>
+
+  <h1><%= @shopping_list.title %> List</h1>
+  <h5><%= @shopping_list.description %></h5>
+
+  <div id="shopping_items_wrapper">
+    <%= render @shopping_list.shopping_items %>
+    <div id="form">
+      <%= render "shopping_items/form" %>
+    </div>
+  </div>
+
+  <div class="links">
+<%= link_to 'Edit', edit_shopping_list_path(@shopping_list) %> |
+<%= link_to 'Back', shopping_lists_path %>
+  </div>
+</div>
